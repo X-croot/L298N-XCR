@@ -20,6 +20,22 @@ L298N is a popular dual H-bridge motor driver, ideal for controlling two DC moto
   <img src="https://arduinoyard.com/wp-content/uploads/2025/02/l298n_motordriver_pinout_bb.png" alt="L298N Pinout Diagram" width="500" />
 </p>
 
+
+
+📚 Function Reference
+Function	Purpose
+attach(pwmPin, in1Pin, in2Pin, name)	Attach motor to pins
+setSpeed(speed)	Control speed & direction (-255 to 255)
+stop()	Stop motor
+enableSumoMode(leftMotor, rightMotor)	Enable dual motor sumo control
+sumoControl(leftSpeed, rightSpeed)	Move both motors together
+manualControl(in1, in2, pwm, duration)	Manual pin & PWM control
+debugOn() / debugOff()	Enable or disable debug messages
+📦 License
+
+Open source under the MIT License.
+
+
 ## 🛠️ Example
 ```cpp
 #include <L298N-XCR.h>
@@ -45,16 +61,3 @@ void loop() {
   motorLeft.sumoControl(0, 0); // stop
   delay(500);
 }
-
-📚 Function Reference
-Function	Purpose
-attach(pwmPin, in1Pin, in2Pin, name)	Attach motor to pins
-setSpeed(speed)	Control speed & direction (-255 to 255)
-stop()	Stop motor
-enableSumoMode(leftMotor, rightMotor)	Enable dual motor sumo control
-sumoControl(leftSpeed, rightSpeed)	Move both motors together
-manualControl(in1, in2, pwm, duration)	Manual pin & PWM control
-debugOn() / debugOff()	Enable or disable debug messages
-📦 License
-
-Open source under the MIT License.

@@ -1,28 +1,26 @@
-<h1 align="center">🚀 L298N-XCR</h1>
-<p align="center">Advanced Arduino library for L298N motor driver with servo-like interface, dual motor mode, and manual control.</p>
+# 🚀 L298N-XCR
+
+Advanced Arduino library for the L298N motor driver with servo-like interface, dual motor sumo mode, and manual control.
 
 <p align="center">
-  <img src="https://64.media.tumblr.com/af8fc629ae1ea93d72453efa404fbca2/tumblr_inline_orwqhlcveQ1rx3jxn_1280.gif" alt="Mini Sumo Robot Demo" width="400"/>
+  <img src="https://64.media.tumblr.com/af8fc629ae1ea93d72453efa404fbca2/tumblr_inline_orwqhlcveQ1rx3jxn_1280.gif" alt="Mini Sumo Robot Demo" width="400" />
 </p>
 
-<h2>✨ Features</h2>
-<ul>
-  <li>Servo-style control (<code>attach</code> and <code>setSpeed</code>)</li>
-  <li>Dual motor sumo mode</li>
-  <li>Manual pin & PWM control</li>
-  <li>Debug output (optional)</li>
-  <li>Clean, object-oriented Arduino design</li>
-</ul>
+## ✨ Features
+- Servo-style control (`attach` and `setSpeed`)
+- Dual motor sumo mode
+- Manual pin & PWM control
+- Debug output (optional)
+- Clean, object-oriented Arduino design
 
-<h2>📦 What is L298N?</h2>
-<p>L298N is a popular dual H-bridge motor driver, ideal for controlling two DC motors with speed and direction.</p>
+## 📦 What is L298N?
+L298N is a popular dual H-bridge motor driver, ideal for controlling two DC motors with speed and direction in robotics projects.
 
 <p align="center">
-  <img src="https://arduinoyard.com/wp-content/uploads/2025/02/l298n_motordriver_pinout_bb.png" alt="L298N Pinout Diagram" width="500"/>
+  <img src="https://arduinoyard.com/wp-content/uploads/2025/02/l298n_motordriver_pinout_bb.png" alt="L298N Pinout Diagram" width="500" />
 </p>
 
-<h2>🛠️ Example</h2>
-
+## 🛠️ Example
 ```cpp
 #include <L298N-XCR.h>
 
@@ -48,4 +46,15 @@ void loop() {
   delay(500);
 }
 
-<h2>📚 Functions</h2> <ul> <li><code>attach(pwmPin, in1Pin, in2Pin, name)</code> – Attach motor to pins</li> <li><code>setSpeed(speed)</code> – Control speed & direction (-255 to 255)</li> <li><code>stop()</code> – Stop motor</li> <li><code>enableSumoMode(leftMotor, rightMotor)</code> – Enable dual motor control</li> <li><code>sumoControl(leftSpeed, rightSpeed)</code> – Move both motors together</li> <li><code>manualControl(in1, in2, pwm, duration)</code> – Manual control mode</li> <li><code>debugOn()</code> / <code>debugOff()</code> – Debug serial output</li> </ul> <h2>📦 License</h2> <p>Open source under the <strong>MIT License</strong>.</p> <h2>✏️ Author</h2> <p>Created by <strong>Your Name</strong><br> GitHub: <a href="https://github.com/yourusername">yourusername</a></p> ```
+📚 Function Reference
+Function	Purpose
+attach(pwmPin, in1Pin, in2Pin, name)	Attach motor to pins
+setSpeed(speed)	Control speed & direction (-255 to 255)
+stop()	Stop motor
+enableSumoMode(leftMotor, rightMotor)	Enable dual motor sumo control
+sumoControl(leftSpeed, rightSpeed)	Move both motors together
+manualControl(in1, in2, pwm, duration)	Manual pin & PWM control
+debugOn() / debugOff()	Enable or disable debug messages
+📦 License
+
+Open source under the MIT License.

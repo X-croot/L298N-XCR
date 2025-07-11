@@ -22,15 +22,16 @@ L298N is a popular dual H-bridge motor driver, ideal for controlling two DC moto
 
 
 
-📚 Function Reference
-Function	Purpose
-attach(pwmPin, in1Pin, in2Pin, name)	Attach motor to pins
-setSpeed(speed)	Control speed & direction (-255 to 255)
-stop()	Stop motor
-enableSumoMode(leftMotor, rightMotor)	Enable dual motor sumo control
-sumoControl(leftSpeed, rightSpeed)	Move both motors together
-manualControl(in1, in2, pwm, duration)	Manual pin & PWM control
-debugOn() / debugOff()	Enable or disable debug messages
+| Function                                 | Purpose                                                                                                                 |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `attach(pwmPin, in1Pin, in2Pin, name)`   | Initialize and attach the motor to the given pins. The `name` parameter is a label shown in debug messages.             |
+| `setSpeed(speed)`                        | Set motor speed and direction. Range: -255 (full reverse) to +255 (full forward).                                       |
+| `stop()`                                 | Immediately stop the motor (PWM = 0).                                                                                   |
+| `enableSumoMode(leftMotor, rightMotor)`  | Link this motor with another to control both together (dual motor sumo or differential drive).                          |
+| `sumoControl(leftSpeed, rightSpeed)`     | Move both motors simultaneously by setting individual speeds. Useful for forward, backward, and turning.                |
+| `manualControl(in1, in2, pwm, duration)` | Manually set IN1/IN2 pin states (1/0), PWM value (0–255), and duration in milliseconds. Gives low-level manual control. |
+| `debugOn()` / `debugOff()`               | Enable or disable debug messages over Serial for troubleshooting.                                                       |
+
 📦 License
 
 Open source under the MIT License.

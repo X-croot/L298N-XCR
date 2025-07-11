@@ -32,9 +32,7 @@ L298N is a popular dual H-bridge motor driver, ideal for controlling two DC moto
 | `manualControl(in1, in2, pwm, duration)` | Manually set IN1/IN2 pin states (1/0), PWM value (0–255), and duration in milliseconds. Gives low-level manual control. |
 | `debugOn()` / `debugOff()`               | Enable or disable debug messages over Serial for troubleshooting.                                                       |
 
-📦 License
 
-Open source under the MIT License.
 
 ![motor](https://cdn.prod.website-files.com/651d5c0b8a3eba9da6348b1d/65707f8fa6e7cc154cb74554_the-third-3-second.gif)
 

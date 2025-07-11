@@ -2,7 +2,7 @@
 
 Advanced Arduino library for the L298N motor driver with servo-like interface, dual motor sumo mode, and manual control.
 
-![motor](https://64.media.tumblr.com/af8fc629ae1ea93d72453efa404fbca2/tumblr_inline_orwqhlcveQ1rx3jxn_1280.gif) ![motor](https://cdn.prod.website-files.com/651d5c0b8a3eba9da6348b1d/65707f8fa6e7cc154cb74554_the-third-3-second.gif)
+![motor](https://64.media.tumblr.com/af8fc629ae1ea93d72453efa404fbca2/tumblr_inline_orwqhlcveQ1rx3jxn_1280.gif) 
 
 
 
@@ -36,6 +36,7 @@ L298N is a popular dual H-bridge motor driver, ideal for controlling two DC moto
 
 Open source under the MIT License.
 
+![motor](https://cdn.prod.website-files.com/651d5c0b8a3eba9da6348b1d/65707f8fa6e7cc154cb74554_the-third-3-second.gif)
 
 ## 🛠️ Example
 ```cpp

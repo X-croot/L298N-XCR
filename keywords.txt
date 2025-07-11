@@ -1,0 +1,10 @@
+L298N_XCR       Class
+
+attach          Method
+setSpeed        Method
+stop            Method
+manualControl   Method
+enableSumoMode  Method
+sumoControl     Method
+debugOn         Method
+debugOff        Method

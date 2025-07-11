@@ -1,0 +1,9 @@
+name=L298N-XCR
+version=1.0.0
+author=X-croot unuvarcan111@gmail.com
+maintainer=X-croot unuvarcan111@gmail.com
+sentence=Advanced L298N motor driver library with servo-like interface, sumo mode, and manual control.
+paragraph=This library allows you to control the L298N motor driver with an easy-to-use, servo-like API. Supports dual motors, sumo mode for coordinated moves, manual mode for direct pin control, and detailed debug output. Simple yet powerful.
+category=Device Control
+url=https://github.com/X-croot/L298N-XCR
+architectures=*
